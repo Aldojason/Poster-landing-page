@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.container {
+  background-image: url(backnew.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-width: 100%;
+  width: 100%;
+}
+
+.navbar {
+  padding: 5px 20px;
+  background-color: rgb(98, 95, 92);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(221, 204, 11);
+  box-shadow: 0px 0px 1px rgb(233, 217, 217);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.navbar ul,
+li {
+  list-style: none;
+  display: flex;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar ul,
+li:hover{
+  color: black;
+  
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar i {
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navbar i:hover{
+  color: #080808;
+}
+
+.main {
+  padding: 40px 25px;
+  position: relative;
+}
+
+.main h2 {
+  font-size: 2rem;
+  color: rgb(40, 38, 38);
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+
+}
+
+.main p {
+  color: rgb(237, 134, 0);
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+
+}
+
+.main button {
+  font-size: 15px;
+  border: 2px solid white;
+  padding: 5px;
+  padding: 10px 25px;
+  color: rgb(29, 28, 28);
+  border-radius: 10px;
+  background-color: rgb(239, 236, 236);
+  font-weight: 600;
+  width: fit-content;
+  margin-left: 46%;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main button:hover{
+  background-color: #ffc107;
+}
+
+.social i {
+  font-size: 25px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+.social {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: -150px;
+  left: 50%;
+  display: flex;
+  gap: 40px;
+}
+.social i:hover{
+   color: brown;
+}
+
+.posters {
+  background-color: rgba(58, 56, 56, 0.64);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.posters h2 {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.postergrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.postcard {
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.postcard img {
+  width: 100%;
+  max-height: 490px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.postcard img:hover{
+  scale: 0.9;
+}
+
+.postcard h3 {
+  margin: 5px;
+  text-align: center;
+  color: rgb(1, 77, 76);
+
+}
+
+.image-container {
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(229, 226, 7);
+  color: black;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.review {
+  font-size: 14px;
+  color: #ffc107;
+  margin-bottom: 8px;
+  gap: 6px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.review .count {
+  color: #e0e0e0;
+  font-size: 13px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.price .new {
+  color: #121111;
+  font-weight: 700;
+}
+
+.about {
+  background-color: rgb(34, 32, 30);
+  padding: 30px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: rgba(249, 248, 251, 0.951);
+}
+
+.abouttext {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #080808;
+}
+
+.abouttext h3 {
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #b98c06;
+}
+
+.abouttext p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.footer {
+  background-color: #aaa;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-contact h4,
+.footer-social h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #151515;
+}
+
+.footer-contact p {
+  margin: 5px 0px;
+  color: #181818;
+}
+
+.footer-social .icons {
+  color: rgb(91, 3, 3);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+i{
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #444;
+  color: #2d2c2c;
+}
+ @media (max-width: 992px) {
+    .postergrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .main button {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  @media (max-width: 848px) {
+    .navbar ul,
+    .icons {
+      display: none;
+    }
+
+    .menu {
+      display: block;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .postergrid {
+      grid-template-columns: 1fr;
+    }
+
+    .main h2,
+    .main p {
+      text-align: center;
+    }
+
+    .social {
+      gap: 20px;
+      bottom: -100px;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .main h2 {
+      font-size: 1.5rem;
+    }
+
+    .main p,
+    .abouttext {
+      font-size: 0.95rem;
+    }
+
+    .footer-contact h4,
+    .footer-social h4 {
+      font-size: 1rem;
+    }
+
+    .postcard img {
+      max-height: 300px;
+    }
+  }

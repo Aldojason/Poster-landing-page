@@ -7,13 +7,7 @@ This is a simple yet fully responsive **poster-selling landing page** built usin
 
 ## 📖 About the Project
 
-I always thought coding was too hard for me. I spent over a year of college unsure and unproductive — until I realized others my age were already learning and building real things.
-
-So I decided to start.
-
-With the help of YouTube tutorials and ChatGPT, I learned the basics of **HTML**, **CSS**, and **responsive web design**. After weeks of practice and effort, I built this project — a clean, mobile-friendly product landing page.
-
-It may be simple, but to me, it's a symbol of starting something I once believed I couldn’t do.
+With the help of YouTube tutorials, I learned the basics of **HTML**, **CSS**, and **responsive web design**. After weeks of practice and effort, I built this project — a clean, mobile-friendly product landing page.
 
 ---
 
